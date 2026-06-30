@@ -2,13 +2,12 @@ const express = require('express');
 const axios = require('axios');
 const path = require('path');
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 // Tumhari Secure API Details
 const API_KEY = 'b75x2Zef3LgSGkA-kt3D429v-nA4jFfFT-1zrHMtgz-TXy73sxZ81WkqRY';
 const API_BASE = 'https://onlinesim.ru/api';
 
-// 🔐 SITE PROTECTION PASSWORD (HTML MEIN NAHI HAI - YAHAN SE CHANGE KARO)
+// 🔐 SITE PROTECTION PASSWORD
 const ACCESS_PASSWORD = 'NawabZada@_610"*:!?_/*-+`~|~÷✓™©®£';
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -91,9 +90,5 @@ app.get('/api/get-otp/:tzid', async (req, res) => {
     }
 });
 
-app.listen(PORT, () => {
-    console.log(`\n======================================================`);
-    console.log(`🦅 Nawab Zada Virtual Numbers Premium Shield Server Active 🦅`);
-    console.log(`🌐 Dashboard Link: http://localhost:${PORT}`);
-    console.log(`======================================================\n`);
-});
+// 🚀 CRITICAL FOR VERCEL: Express instance ko module exports karna lazmi hai
+module.exports = app;
