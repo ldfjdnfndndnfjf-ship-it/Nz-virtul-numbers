@@ -9,7 +9,7 @@ const API_KEY = 'b75x2Zef3LgSGkA-kt3D429v-nA4jFfFT-1zrHMtgz-TXy73sxZ81WkqRY';
 const API_BASE = 'https://onlinesim.ru/api';
 
 // 🔐 SITE PROTECTION PASSWORD (HTML MEIN NAHI HAI - YAHAN SE CHANGE KARO)
-const ACCESS_PASSWORD = 'NawabZada@_"*:!?_/*-+`~|~÷✓™©®£';
+const ACCESS_PASSWORD = 'NawabZada@_610"*:!?_/*-+`~|~÷✓™©®£';
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
